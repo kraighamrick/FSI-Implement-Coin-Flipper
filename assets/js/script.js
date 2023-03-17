@@ -2,11 +2,25 @@
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    // This is just a sanity check to make sure your JavaScript script is getting loaded
-    // You can remove it once you see it in your browser console in the developer tools
-    console.log('Hi')
+ // TODO: Add event listener and handler for flip and clear buttons
+    let flipButton = document.querySelector('#flip-button')
+    flipButton.addEventListener('click', () => {
+        let num = Math.random();
+        if (num < 0.5) {    
+            console.log('heads')
+    
+        } else {
+            console.log('tails')
+        }
 
-    // TODO: Add event listener and handler for flip and clear buttons
+}
+);
+
+    let clearButton = document.querySelector('#clear-button')
+    clearButton.addEventListener('click', () => {
+        alert('you clicked clear');
+}
+);
 
     // Flip Button Click Handler
         // TODO: Determine flip outcome
